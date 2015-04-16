@@ -1,0 +1,9 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := FibLib.c
+LOCAL_SRC_FILES += empty.c
+LOCAL_MODULE := FibLib
+LOCAL_CFLAGS := -DANDROID_NDK
+
+include $(BUILD_SHARED_LIBRARY)
